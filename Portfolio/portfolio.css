@@ -1,0 +1,59 @@
+/* Portfolio Gallery Section */
+/* Inspired by Day 18 - Background Slider (Handling gallery images and layout) */
+.portfolio-gallery {
+  padding: 60px 20px; /* Adds space around the gallery section */
+  text-align: center; /* Centers the text */
+}
+
+/* Intro Text Section */
+/* Inspired by Day 8 - Form Wave Animation (Use of background and box styling) */
+.portfolio-gallery .intro-text {
+  max-width: 800px; /* Limits the width of the intro text */
+  margin: 0 auto 40px auto; /* Centers the block and adds bottom margin */
+  padding: 20px; /* Adds space inside the intro block */
+  background-color: #f0f4f8; /* Light gray/blue background */
+  border-radius: 8px; /* Rounds the corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Heading Styling */
+/* Inspired by Day 5 - Blurry Loading (Text appearance enhancements) */
+.portfolio-gallery h2 {
+  font-size: 2.5rem; /* Large font size for the heading */
+  color: #1f2937; /* Dark blue-gray color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph Styling */
+.portfolio-gallery p {
+  font-size: 1.2rem; /* Slightly larger font for readability */
+  color: #555; /* Medium gray color */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Gallery Section */
+/* Inspired by Day 18 - Background Slider */
+.gallery {
+  display: flex; /* Uses flexbox for layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px; /* Space between gallery items */
+  justify-content: center; /* Centers the gallery items */
+}
+
+/* Gallery Images */
+/* Inspired by Day 29 - Double Heart Click (Use of hover and transformation effects) */
+.gallery img {
+  width: 250px; /* Fixed width for images */
+  height: 250px; /* Fixed height to maintain a grid layout */
+  object-fit: cover; /* Ensures images cover the entire area */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect on Images */
+/* Inspired by Day 29 - Double Heart Click */
+.gallery img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}

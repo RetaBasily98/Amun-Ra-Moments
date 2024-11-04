@@ -1,0 +1,146 @@
+/* Contact Section */
+/* Styles the main contact section with centered content and background color */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #f5f7fa;
+}
+
+/* Contact Content */
+/* Sets the styling for the content box within the contact section */
+.contact-content {
+  max-width: 600px;
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  color: #333;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+/* Styles each form group, aligning labels and input fields */
+.contact-section .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styles the form labels */
+.contact-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1f2937;
+}
+
+/* Styles for Input and Textarea Fields */
+/* Common styles for input and textarea fields */
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333;
+  transition: border-color 0.3s ease; /* Smooth border color transition on focus */
+}
+
+/* Focus State for Input and Textarea */
+/* Changes border color when input or textarea is focused */
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* New Button Styling */
+/* Styles for the purple button with uppercase text and ripple effect */
+button {
+  background-color: purple;
+  color: #fff;
+  border: 1px solid purple;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Removes outline when the button is focused */
+button:focus {
+  outline: none;
+}
+
+/* Ripple Effect on Button */
+/* Defines the white circle that expands on button click for the ripple effect */
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.5s ease-out;
+}
+
+/* Ripple Animation */
+/* Expands and fades the circle during the ripple effect */
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* Thank You Message */
+/* Styles for the thank-you message shown after form submission */
+.thank-you {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hero Section with Background Image */
+/* Sets up the hero section with a background image and centered text */
+.hero.contact-hero {
+  background-image: url('background_contact.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero.contact-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+}
+
+.hero.contact-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #dddddd;
+}
